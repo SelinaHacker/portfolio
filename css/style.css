@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400&display=swap');
 
-/* === Reset & Basis === */
+/*Reset & Basis*/
 * {
     box-sizing: border-box;
 }
@@ -22,7 +22,7 @@ body > main {
     flex-direction: column;
 }
 
-/* === Header & Navigation (fixed) === */
+/* Header & Navigation */
 header {
     position: fixed;
     top: 0;
@@ -67,7 +67,7 @@ nav a:hover {
     color: #d985aa;
 }
 
-/* === Hero Section === */
+/*Hero Section */
 #hero {
     margin-top: 80px;
     padding: 20px 0 20px 0;
@@ -124,7 +124,7 @@ nav a:hover {
     transform: scale(1.05);
 }
 
-/* === Sections Allgemein === */
+/* Sections Allgemein */
 section {
     display: none;
     padding: 60px 40px;
@@ -138,7 +138,7 @@ h2, h3 {
     font-weight: 800;
 }
 
-/* === Über mich === */
+/* Über mich*/
 .about-section {
     background: #fff;
     padding: 60px 100px;
@@ -193,7 +193,7 @@ h2, h3 {
     line-height: 1.8;
 }
 
-/* === Projekte === */
+/*Projekte*/
 .projects {
     display: flex;
     flex-direction: column;
@@ -216,7 +216,7 @@ h2, h3 {
     text-decoration: underline;
 }
 
-/* === Download Button === */
+/* Download Button*/
 .download-container {
     margin-top: -20px;
     padding: 40px 0 0;
@@ -302,9 +302,7 @@ h2, h3 {
     }
 }
 
-
-
-/* === Footer === */
+/* Footer */
 footer {
     color: #666;
     font-size: 0.9rem;
@@ -312,7 +310,7 @@ footer {
     padding: 20px 0;
 }
 
-/* === Mobile Fallback === */
+/* Mobile Fallback  */
 @media (max-width: 768px) {
     header nav {
         flex-direction: column;
