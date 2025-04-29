@@ -10,8 +10,11 @@
 
 <header>
     <nav>
-        <h1>Selina Hacker</h1>
-        <ul>
+        <div class="nav-container">
+            <h1>Selina Hacker</h1>
+            <button class="menu-toggle" aria-label="Menü öffnen">&#9776;</button>
+        </div>
+        <ul class="nav-links">
             <li><a href="#hero">Home</a></li>
             <li><a href="#projects">Projekte</a></li>
             <li><a href="#kontakt">Kontakt</a></li>
@@ -126,58 +129,65 @@
     <section id="projects">
         <h2 class="projects-heading">Meine Projekte</h2>
 
-        <div class="projects">
-            <div class="project">
-                <h3>Pet Sitting App – Figma Prototyp</h3>
-                <p>
-                    Diese App entstand im Rahmen der Lehrveranstaltung
-                    <strong>User Interface Design for Mobile Devices</strong>. Der
-                    klickbare Prototyp wurde mit Figma erstellt und richtet sich an
-                    Nutzer:innen, die einfach und sicher Tiersitter finden möchten.
-                </p>
-                <div class="project-images">
-                    <img src="docs/pet_sitter/home.png" alt="Home Screen">
-                    <img src="docs/pet_sitter/check_about_pet.png" alt="Check About Pet">
-                    <img src="docs/pet_sitter/check_about_pet_2.png" alt="Check About Pet 2">
-                    <img src="docs/pet_sitter/favourite_sitters.png" alt="Favourite Sitters">
-                    <img src="docs/pet_sitter/profile_1.png" alt="Profile 1">
-                    <img src="docs/pet_sitter/profile_2.png" alt="Profile 2">
-                    <img src="docs/pet_sitter/selection.png" alt="Selection">
-                </div>
-                <a class="figma-link" href="https://www.figma.com/..." target="_blank" rel="noopener">Projekt in Figma ansehen</a>
+        <!-- GRID für alle Projekte -->
+        <div class="projects-grid">
+
+            <!-- Projekt 1 -->
+            <div class="project-card">
+                <h3>Pet Sitting App</h3>
+                <p>Eine App, um Tiersitter einfach und sicher zu finden.</p>
+                <a href="petsitting.html" class="view-project">Projekt ansehen →</a>
             </div>
 
-            <div class="project">
-                <h3>Imago - Social Media Webseite</h3>
-                <p>
-                    Imago ist eine Social Media Webseite, wo User ein Profil erstellen können.
-                    Auf dieses können sie Text posten oder Bilder hochladen, die von anderen Usern geliked werden können.
-                    Der User kann auch Freunde hinzufügen, um dessen Profile schneller abrufen zu können.
-                </p>
-                <div class="project-images imago-images">
-                    <img src="docs/imago/login.png" alt="Login Screen">
-                    <img src="docs/imago/signin.png" alt="Sign-In Screen">
-                    <img src="docs/imago/home_imago.png" alt="Home Screen">
-                    <img src="docs/imago/friend_page.png" alt="Friend Page">
-                </div>
+            <!-- Projekt 2 -->
+            <div class="project-card">
+                <h3>Imago Social Media</h3>
+                <p>Eine Social Media Webseite zum Posten von Texten und Bildern.</p>
+                <a href="imago.html" class="view-project">Projekt ansehen →</a>
             </div>
-            <div class="project">
-                <h3>Bookstore App - Mobile App</h3>
-                <p>
-                    Bookstore ist eine, wie der Name schon sagt, eine Büchershop App (oder eher eine Simulation davon). Sie wurde mit Kotlin in Android Studio
-                    geschrieben. Die Bücher, die in der App erhältlich sind, sind Coding Bücher und werden aus einer
-                    API gefetched. Auf den Screenshots sind man die Wireframes der App.
-                </p>
-                <div class="project-images bookstore-images">
-                    <img src="docs/Bookstore/welcome.png" alt="Welcome Screen">
-                    <img src="docs/Bookstore/detail_screen.png" alt="Detail Screen">
-                    <img src="docs/Bookstore/shopping_cart.png" alt="Shopping Cart">
-                    <img src="docs/Bookstore/checkout.png" alt="Checkout">
-                    <img src="docs/Bookstore/comments.png" alt="Comments">
-                    <img src="docs/Bookstore/wishlist.png" alt="Wishlist">
-                </div>
+
+            <!-- Projekt 3 -->
+            <div class="project-card">
+                <h3>Bookstore App</h3>
+                <p>Eine mobile App für Coding-Bücher – gebaut mit Kotlin.</p>
+                <a href="bookstore.html" class="view-project">Projekt ansehen →</a>
+            </div>
+
+            <!-- Weitere Projekte einfach hier kopieren -->
+
+        </div>
+
+        <!-- Detailansichten (am Anfang versteckt) -->
+        <div id="pet-sitting-detail" class="project-detail hidden">
+            <h3>Pet Sitting App – Details</h3>
+            <div class="project-images">
+                <img src="docs/pet_sitter/home.png" alt="Home Screen">
+                <img src="docs/pet_sitter/check_about_pet.png" alt="Check About Pet">
+                <img src="docs/pet_sitter/favourite_sitters.png" alt="Favourite Sitters">
+                <!-- usw... -->
             </div>
         </div>
+
+        <div id="imago-detail" class="project-detail hidden">
+            <h3>Imago – Details</h3>
+            <div class="project-images">
+                <img src="docs/imago/login.png" alt="Login Screen">
+                <img src="docs/imago/signin.png" alt="Sign-In Screen">
+                <img src="docs/imago/home_imago.png" alt="Home Screen">
+                <!-- usw... -->
+            </div>
+        </div>
+
+        <div id="bookstore-detail" class="project-detail hidden">
+            <h3>Bookstore App – Details</h3>
+            <div class="project-images">
+                <img src="docs/Bookstore/welcome.png" alt="Welcome Screen">
+                <img src="docs/Bookstore/detail_screen.png" alt="Detail Screen">
+                <img src="docs/Bookstore/shopping_cart.png" alt="Shopping Cart">
+                <!-- usw... -->
+            </div>
+        </div>
+
     </section>
 
     <!-- KONTAKT -->

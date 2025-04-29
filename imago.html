@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imago – Projekt</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="nav-container">
+            <h1>Selina Hacker</h1>
+            <button class="menu-toggle" aria-label="Menü öffnen">&#9776;</button>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html#hero">Home</a></li>
+            <li><a href="index.html#projects">Projekte</a></li>
+            <li><a href="index.html#kontakt">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="project-detail-page">
+    <h1>Imago</h1>
+    <p>Eine Social Media Plattform für das Teilen von Texten und Bildern unter Freunden.</p>
+
+    <div class="project-images">
+        <img src="docs/imago/login.png" alt="Login Screen">
+        <img src="docs/imago/signin.png" alt="Sign-In Screen">
+        <img src="docs/imago/home_imago.png" alt="Home Screen">
+        <img src="docs/imago/friend_page.png" alt="Friend Page">
+    </div>
+
+    <div class="download-container">
+        <a href="index.html#projects" class="btn">Zurück zur Übersicht</a>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2025 Selina Hacker – Portfolio</p>
+</footer>
+
+<!-- Lightbox Overlay -->
+<div id="lightbox" class="hidden">
+    <span class="close-lightbox">&times;</span>
+    <img id="lightbox-img" src="" alt="Vergrößerte Ansicht">
+
+    <!-- Pfeile links/rechts -->
+    <div class="lightbox-arrow left-arrow">&#8592;</div>
+    <div class="lightbox-arrow right-arrow">&#8594;</div>
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
