@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoteIt</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="nav-container">
+            <h1>Selina Hacker</h1>
+            <button class="menu-toggle" aria-label="Menü öffnen">&#9776;</button>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html#hero">Home</a></li>
+            <li><a href="index.html#projects">Projekte</a></li>
+            <li><a href="index.html#kontakt">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="project-detail-page">
+    <h1>NoteIt</h1>
+    <p>NoteIt ist eine Android-App (gebaut mit Kotlin), mit der man wichtige Gedanken und Notizen einfach festhalten kann.
+        Nutzer:innen können ihre Notizen farblich markieren, in Kategorien einordnen und mit praktischen Filtern
+        (z.B. nach Titel, Datum oder Farbe) schnell wiederfinden. So bleibt alles gut organisiert und leicht zugänglich.
+    </p>
+    <p>
+        <a href="https://github.com/SelinaHacker/NoteIt" target="_blank" class="github-link">Zur Dokumentation und Download</a>
+    </p>
+
+    <div class="project-images">
+        <img src="docs/NoteIt/Home.jpeg" alt="Login Screen">
+        <img src="docs/NoteIt/Note.jpeg" alt="Sign-In Screen">
+        <img src="docs/NoteIt/Filter.jpeg" alt="Home Screen">
+        <img src="docs/NoteIt/Category.jpeg" alt="Friend Page">
+    </div>
+
+    <div class="download-container">
+        <a href="index.html#projects" class="btn">Zurück zur Übersicht</a>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2025 Selina Hacker – Portfolio</p>
+</footer>
+
+<!-- Lightbox Overlay -->
+<div id="lightbox" class="hidden">
+    <span class="close-lightbox">&times;</span>
+    <img id="lightbox-img" src="" alt="Vergrößerte Ansicht">
+
+    <!-- Pfeile links/rechts -->
+    <div class="lightbox-arrow left-arrow">&#8592;</div>
+    <div class="lightbox-arrow right-arrow">&#8594;</div>
+</div>
+
+<script src="js/script.js"></script>
