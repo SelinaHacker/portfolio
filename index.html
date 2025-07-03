@@ -116,8 +116,10 @@
                 </div>
 
                 <div class="download-container">
+
+
                     <a class="btn download-btn" href="docs/Lebenslauf.pdf" download>
-                        Lebenslauf herunterladen
+                        <i data-lucide="download"></i> Lebenslauf herunterladen
                     </a>
                 </div>
             </div>
@@ -128,8 +130,9 @@
     <section id="projects">
         <h2 class="projects-heading">Meine Projekte</h2>
 
+        <!-- UI/UX Prototypen -->
+        <h3 class="projects-subheading"><i data-lucide="pen-tool"></i> UI/UX Prototypen</h3>
         <div class="projects-grid">
-
             <!-- Pet Sitting -->
             <div class="project-card">
                 <h3>Pet Sitting App Design</h3>
@@ -137,6 +140,17 @@
                 <a href="petsitting.html" class="view-project">Projekt ansehen →</a>
             </div>
 
+            <!-- Greenbank -->
+            <div class="project-card">
+                <h3>Greenbank</h3>
+                <p>Ein High-fidelity Figma Prototyp einer fiktiven Bank.</p>
+                <a href="greenbank.html" class="view-project">Projekt ansehen →</a>
+            </div>
+        </div>
+
+        <!-- Programmierte Anwendungen -->
+        <h3 class="projects-subheading"><i data-lucide="code"></i> Programmierte Anwendungen</h3>
+        <div class="projects-grid">
             <!-- Imago -->
             <div class="project-card">
                 <h3>Imago Social Media</h3>
@@ -164,21 +178,17 @@
                 <p>Ein First-Person-Wave-Shooter Unity game.</p>
                 <a href="deadwood.html" class="view-project">Projekt ansehen →</a>
             </div>
+        </div>
 
-            <!-- Blender Projekte-->
+        <!-- 3D Modelle -->
+        <h3 class="projects-subheading"><i data-lucide="box"></i> 3D Modelle</h3>
+        <div class="projects-grid">
+            <!-- Blender -->
             <div class="project-card">
                 <h3>Blender Modelle</h3>
-                <p>Eine kleine Sammlung ein paar meine Blender Arbeiten.</p>
+                <p>Eine kleine Sammlung ein paar meiner Blender Arbeiten.</p>
                 <a href="blender.html" class="view-project">Projekt ansehen →</a>
             </div>
-
-            <!-- Greenbank -->
-            <div class="project-card">
-                <h3>Greenbank</h3>
-                <p>Ein High-fidelity Figma Prototyp einer fiktiven Bank.</p>
-                <a href="greenbank.html" class="view-project">Projekt ansehen →</a>
-            </div>
-
         </div>
     </section>
 
@@ -190,14 +200,17 @@
                 Du möchtest mit mir in Kontakt treten oder mehr über meine Projekte
                 erfahren? Schreib mir gerne:
                 <br><br>
-                <strong>E-Mail:</strong>
-                <a href="mailto:selinahacker1@gmail.com" class="kontakt-link">selinahacker1@gmail.com</a>
+                <a href="mailto:selinahacker1@gmail.com" class="kontakt-link">
+                    <i data-lucide="mail"></i> selinahacker1@gmail.com
+                </a>
                 <br><br>
-                <strong>GitHub:</strong>
-                <a href="https://github.com/SelinaHacker" target="_blank" class="kontakt-link">https://github.com/SelinaHacker</a>
+                <a href="https://github.com/SelinaHacker" target="_blank" class="kontakt-link">
+                    <i data-lucide="github"></i> GitHub
+                </a>
                 <br><br>
-                <strong>Instagram:</strong>
-                <a href="https://www.instagram.com/_seli.7_/" target="_blank" class="kontakt-link">@_seli.7_</a>
+                <a href="https://www.instagram.com/_seli.7_/" target="_blank" class="kontakt-link">
+                    <i data-lucide="instagram"></i> @_seli.7_
+                </a>
             </p>
         </div>
     </section>
@@ -207,6 +220,11 @@
 <footer>
     <p>&copy; 2025 Selina Hacker – Portfolio</p>
 </footer>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+    lucide.createIcons();
+</script>
 
 <script src="js/script.js"></script>
 </body>

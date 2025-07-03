@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", () => {
         );
     }
 
-    // Nur auf der Startseite Sections verwalten
     if (sections.length > 0) {
         const initial = window.location.hash.slice(1) || "hero";
         showSection(initial);

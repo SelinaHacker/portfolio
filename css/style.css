@@ -7,7 +7,7 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, sans-serif;
-    background: #f9f9fb;
+    background: radial-gradient(circle at center, #f2e5ef 0%, #f9f9fb 100%);
     color: #2d2d2d;
     line-height: 1.7;
     display: flex;
@@ -192,6 +192,8 @@ h2, h3 {
     line-height: 1.8;
 }
 
+
+
 /*Projekte*/
 .projects {
     display: flex;
@@ -257,18 +259,23 @@ h2, h3 {
 }
 
 .view-project {
+    margin-top: auto;
     display: inline-flex;
     align-items: center;
-    gap: 8px;
-    color: #d985aa;
-    font-weight: bold;
-    font-size: 1rem;
+    gap: 6px;
+    background: #d985aa;
+    color: #fff;
     text-decoration: none;
-    transition: transform 0.2s;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border-radius: 12px;
+    padding: 10px 20px;
+    transition: background 0.3s, transform 0.2s;
 }
 
 .view-project:hover {
-    transform: translateX(5px);
+    background: #c1749d;
+    transform: translateY(-2px);
 }
 
 /* Detailansichten */
@@ -314,6 +321,24 @@ h2, h3 {
     font-size: 1.2rem;
     margin-bottom: 40px;
     color: #333;
+}
+
+.projects-subheading {
+    font-size: 2rem;
+    color: #d985aa;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    padding-left: 100px;
+}
+
+
+.projects-subheading svg {
+    width: 28px;
+    height: 28px;
+    color: #d985aa;
 }
 
 #lightbox {
@@ -467,10 +492,25 @@ h2, h3 {
 }
 
 .kontakt-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
     font-weight: 600;
     font-size: 1.25rem;
     color: #0077cc;
     text-decoration: underline;
+    transition: color 0.3s;
+}
+
+.kontakt-link:hover {
+    color: #d985aa;
+}
+
+.kontakt-link svg {
+    width: 20px;
+    height: 20px;
+    color: #d985aa;
+    flex-shrink: 0;
 }
 
 @media (max-width: 768px) {
