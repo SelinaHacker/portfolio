@@ -139,20 +139,6 @@ h2, h3 {
     font-weight: 800;
 }
 
-.background-shape {
-    position: absolute;
-    top: 100px;
-    right: 100px;
-    width: 600px;
-    height: 600px;
-    background: radial-gradient(circle at center, rgba(242, 240, 255, 0.9) 0%, rgba(242, 240, 255, 0.3) 100%);
-    filter: blur(150px);
-    z-index: 0;
-    border-radius: 50%;
-    pointer-events: none;
-}
-
-
 /* Über mich*/
 .about-section {
     background: #fff;
@@ -528,12 +514,6 @@ h2, h3 {
     flex-shrink: 0;
 }
 
-@media (max-width: 768px) {
-    .kontakt-container {
-        padding: 0 20px;
-    }
-}
-
 /* Footer */
 footer {
     color: #666;
@@ -564,6 +544,10 @@ footer {
         max-width: 100%;
         margin: 0 auto;
     }
+}
+
+.kontakt-container {
+    padding: 0 20px;
 }
 
 @media (max-width: 768px) {
@@ -729,8 +713,20 @@ footer {
     }
 
     .projects-heading {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        margin-top: 60px;
+        margin-bottom: 20px;
+    }
+
+    .projects-subheading {
+        font-size: 1.4rem;
+        padding-left: 20px;
         margin-top: 40px;
+        margin-bottom: 10px;
+    }
+
+    .projects-subheading svg {
+        color: inherit;
     }
 
     .project-detail-page h1 {
